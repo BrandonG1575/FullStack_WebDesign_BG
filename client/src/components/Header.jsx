@@ -22,9 +22,9 @@ function Header() {
 
   return (
     <div className='flex items-center w-screen justify-between border-b-[4px]'>
-      <div className='w-[90px] h-[90px] bg-slate-800'>
+      <div className='w-[90px] h-[90px] bg-slate-300'>
       </div>
-      <div className='flex gap-14 font-medium'>
+      <div className='flex gap-14 font-medium text-xl'>
         {menu.map((item)=>(
           <div className='cursor-pointer hover:underline'>
             <h2>{item.name}</h2>
