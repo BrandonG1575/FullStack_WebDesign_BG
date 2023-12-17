@@ -21,15 +21,17 @@ function Header() {
   ];
 
   return (
-    <div className='flex'>
-      <div className='w-[90px] h-[90px] bg-slate-950'>
+    <div className='flex items-center w-screen justify-between border-b-[4px]'>
+      <div className='w-[90px] h-[90px] bg-slate-800'>
       </div>
-      <div className='flex gap-14'>
+      <div className='flex gap-14 font-medium'>
         {menu.map((item)=>(
-          <div className='cursor-pointer hover:underline font-medium'>
+          <div className='cursor-pointer hover:underline'>
             <h2>{item.name}</h2>
           </div>
         ))}
+      </div>
+      <div className='w-[90px] h-[90px] bg-slate-300'>
       </div>
     </div>
   )
